@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+        <classes>
+    <Class>
+        <Name>Barbarian</Name>
+        <HP>10</HP>
+        <BAB>Good</BAB>
+        <GoodSave1>Fort</GoodSave1>
+        <GoodSave2>Will</GoodSave2>
+        <BadSave>Ref</BadSave>
+        <KOM>Str</KOM>
+        <KDM>Con</KDM>
+        <Skills>5</Skills>
+        <Description>Terrifying and tough melee fighter</Description>
+    </Class>
+
+    <Class>
+        <Name>Monk</Name>
+        <HP>8</HP>
+        <BAB>Good</BAB>
+        <GoodSave1></GoodSave1>
+        <GoodSave2></GoodSave2>
+        <BadSave></BadSave>
+        <KOM>Wis</KOM>
+        <KDM>Con</KDM>
+        <Skills>6</Skills>
+        <Description>Fast, precise martial artist</Description>
+    </Class>
+
+    <Class>
+        <Name>Paladin</Name>
+        <HP>10</HP>
+        <BAB>Good</BAB>
+        <GoodSave1>Fort</GoodSave1>
+        <GoodSave2>Will</GoodSave2>
+        <BadSave>Ref</BadSave>
+        <KOM>Str</KOM>
+        <KDM>Cha</KDM>
+        <Skills>5</Skills>
+        <Description>Supernaturally powerful arbiter of justice</Description>
+    </Class>
+
+    <Class>
+        <Name>Ranger</Name>
+        <HP>10</HP>
+        <BAB>Good</BAB>
+        <GoodSave1>Fort</GoodSave1>
+        <GoodSave2>Ref</GoodSave2>
+        <BadSave>Will</BadSave>
+        <KOM>Dex</KOM>
+        <KDM>Int</KDM>
+        <Skills>6</Skills>
+        <Description>Hunter, scout, and special operative</Description>
+    </Class>
+
+    <Class>
+        <Name>Rouge</Name>
+        <HP>8</HP>
+        <BAB></BAB>
+        <GoodSave1>Ref</GoodSave1>
+        <GoodSave2></GoodSave2>
+        <BadSave></BadSave>
+        <KOM></KOM>
+        <KDM></KDM>
+        <Skills></Skills>
+        <Description>Trickster that relies on skill in battle</Description>
+    </Class>
+
+    <Class>
+        <Name>Sage</Name>
+        <HP>8</HP>
+        <BAB>Poor</BAB>
+        <GoodSave1></GoodSave1>
+        <GoodSave2></GoodSave2>
+        <BadSave></BadSave>
+        <KOM></KOM>
+        <KDM></KDM>
+        <Skills>6</Skills>
+        <Description>Master of arcane secrets and battle magic</Description>
+    </Class>
+
+    <Class>
+        <Name>Shaman</Name>
+        <HP>8</HP>
+        <BAB>Poor</BAB>
+        <GoodSave1>Fort</GoodSave1>
+        <GoodSave2>Will</GoodSave2>
+        <BadSave>Ref</BadSave>
+        <KOM>Wis</KOM>
+        <KDM>Cha</KDM>
+        <Skills>6</Skills>
+        <Description>Spellcaster with powers that heal or harm</Description>
+    </Class>
+
+    <Class>
+        <Name>Tactician</Name>
+        <HP>8</HP>
+        <BAB>Poor</BAB>
+        <GoodSave1>Ref</GoodSave1>
+        <GoodSave2>Will</GoodSave2>
+        <BadSave>Fort</BadSave>
+        <KOM>Int</KOM>
+        <KDM>Con</KDM>
+        <Skills>9</Skills>
+        <Description>Spellcaster that controls the battlefield</Description>
+    </Class>
+        </classes>
