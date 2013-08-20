@@ -11,22 +11,23 @@ import java.util.List;
  */
 public class LegendClass {
     String name;
-    int hpPerLvl;
-    boolean BABGood;
-    List<enums.Saves> goodSaves;
-    enums.Saves badSave;
-    enums.Ability KOM;
-    enums.Ability KDM;
-    int skills;
+    List<Integer> possibleHpPerLvl;
+    List<Boolean> possibleBABGood;
+    List<enums.Saves> possibleGoodSave1;
+    List<enums.Saves> possibleGoodSave2;
+    List<enums.Saves> possibleBadSave;
+    List<enums.Ability> possibleKOM;
+    List<enums.Ability> possibleKDM;
+    List<Integer> possibleSkills;
     String description;
 
     public String toString(){
         return(
                 "Name: " + name +
-                "\nHP Per Level: " + hpPerLvl +
-                "\nBAB: " + (BABGood ? "Good" : "Bad") +
-                "\nKOM: " + KOM + "\nKDM: " + KDM +
-                "\nNumber of Skills: " + skills +
+                "\nHP Per Level: " + possibleHpPerLvl.get(0) +
+                "\nBAB: " + (possibleBABGood.get(0) ? "Good" : "Bad") +
+                "\nKOM: " + possibleKOM.get(0) + "\nKDM: " + possibleKDM.get(0) +
+                "\nNumber of Skills: " + possibleSkills.get(0) +
                 "\nDescription: " + description
                 );
     }

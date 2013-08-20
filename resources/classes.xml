@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+<!-- Currently these values are not fully fleshed out
+    I worked it this way to just have the ability to test -->
         <classes>
     <Class>
         <Name>Barbarian</Name>
@@ -17,9 +19,9 @@
         <Name>Monk</Name>
         <HP>8</HP>
         <BAB>Good</BAB>
-        <GoodSave1></GoodSave1>
-        <GoodSave2></GoodSave2>
-        <BadSave></BadSave>
+        <GoodSave1>Fort</GoodSave1>
+        <GoodSave2>Will</GoodSave2>
+        <BadSave>Ref</BadSave>
         <KOM>Wis</KOM>
         <KDM>Con</KDM>
         <Skills>6</Skills>
@@ -55,13 +57,16 @@
     <Class>
         <Name>Rouge</Name>
         <HP>8</HP>
-        <BAB></BAB>
+        <BAB>Good</BAB>
+        <BAB>Bad</BAB>
         <GoodSave1>Ref</GoodSave1>
-        <GoodSave2></GoodSave2>
-        <BadSave></BadSave>
-        <KOM></KOM>
-        <KDM></KDM>
-        <Skills></Skills>
+        <GoodSave2>Will</GoodSave2>
+        <GoodSave2>Fort</GoodSave2>
+        <BadSave>Fort</BadSave>
+        <BadSave>Will</BadSave>
+        <KOM>Dex</KOM>
+        <KDM>Int</KDM>
+        <Skills>5</Skills>
         <Description>Trickster that relies on skill in battle</Description>
     </Class>
 
@@ -69,11 +74,11 @@
         <Name>Sage</Name>
         <HP>8</HP>
         <BAB>Poor</BAB>
-        <GoodSave1></GoodSave1>
-        <GoodSave2></GoodSave2>
-        <BadSave></BadSave>
-        <KOM></KOM>
-        <KDM></KDM>
+        <GoodSave1>Ref</GoodSave1>
+        <GoodSave2>Will</GoodSave2>
+        <BadSave>Fort</BadSave>
+        <KOM>Dex</KOM>
+        <KDM>Int</KDM>
         <Skills>6</Skills>
         <Description>Master of arcane secrets and battle magic</Description>
     </Class>

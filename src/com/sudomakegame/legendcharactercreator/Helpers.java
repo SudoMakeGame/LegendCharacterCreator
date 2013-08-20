@@ -49,12 +49,57 @@ public class Helpers {
                     /*
                     Refactor to have it that if the element has more than one item, put it into a list
                      */
+
                     x.name = eElement.getElementsByTagName("Name").item(0).getTextContent();
-                    x.hpPerLvl = Integer.valueOf(eElement.getElementsByTagName("HP").item(0).getTextContent());
-                    x.BABGood =  eElement.getElementsByTagName("BAB").item(0).getTextContent().startsWith("Good");
-                    x.KOM = enums.Ability.valueOf(eElement.getElementsByTagName("KOM").item(0).getTextContent().toUpperCase());
-                    x.KDM = enums.Ability.valueOf(eElement.getElementsByTagName("KDM").item(0).getTextContent().toUpperCase());
-                    x.skills = Integer.valueOf(eElement.getElementsByTagName("Skills").item(0).getTextContent());
+
+                    x.possibleHpPerLvl = new ArrayList<Integer>();
+                    NodeList nl = eElement.getElementsByTagName("HP");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleHpPerLvl.add(Integer.valueOf(nl.item(j).getTextContent()));
+                    }
+
+                    x.possibleBABGood = new ArrayList<Boolean>();
+                    nl = eElement.getElementsByTagName("BAB");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleBABGood.add(nl.item(j).getTextContent().startsWith("Good"));
+                    }
+
+                    x.possibleGoodSave1 = new ArrayList<enums.Saves>();
+                    nl = eElement.getElementsByTagName("GoodSave1");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleGoodSave1.add(enums.Saves.valueOf(nl.item(j).getTextContent().toUpperCase()));
+                    }
+
+                    x.possibleGoodSave2 = new ArrayList<enums.Saves>();
+                    nl = eElement.getElementsByTagName("GoodSave2");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleGoodSave2.add(enums.Saves.valueOf(nl.item(j).getTextContent().toUpperCase()));
+                    }
+
+                    x.possibleBadSave = new ArrayList<enums.Saves>();
+                    nl = eElement.getElementsByTagName("BadSave");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleBadSave.add(enums.Saves.valueOf(nl.item(j).getTextContent().toUpperCase()));
+                    }
+
+                    x.possibleKOM = new ArrayList<enums.Ability>();
+                    nl = eElement.getElementsByTagName("KOM");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleKOM.add(enums.Ability.valueOf(nl.item(j).getTextContent().toUpperCase()));
+                    }
+
+                    x.possibleKDM = new ArrayList<enums.Ability>();
+                    nl = eElement.getElementsByTagName("KDM");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleKDM.add(enums.Ability.valueOf(nl.item(j).getTextContent().toUpperCase()));
+                    }
+
+                    x.possibleSkills = new ArrayList<Integer>();
+                    nl = eElement.getElementsByTagName("Skills");
+                    for(int j = 0; j < nl.getLength(); j++){
+                        x.possibleSkills.add(Integer.valueOf(nl.item(j).getTextContent()));
+                    }
+
                     x.description = eElement.getElementsByTagName("Description").item(0).getTextContent();
                     classes.add(x);
                 }
