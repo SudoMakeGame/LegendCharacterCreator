@@ -15,4 +15,21 @@ public class enums {
     public enum Ability {
         STR, DEX, CON, INT, WIS, CHA
     }
+
+    public enum Size {
+        TINY, SMALL, AVERAGE, LARGE, HUGE
+    }
+
+    public enum Type {
+        HUMANOID
+    }
+
+    public enum Skills {
+        ACROBATICS, ATHLETICS, LARCENY, STEALTH, RIDE, VIGOR, ARCANA, ENGINEERING,
+        GEOGRAPHY, HISTORY, MEDICINE, NATURE, BLUFF, DIPLOMACY, INTIMIDATE, PERCEPTION
+    }
+
+    public enum Vision {
+        DARKVISION, GHOSTWISE
+    }
 }

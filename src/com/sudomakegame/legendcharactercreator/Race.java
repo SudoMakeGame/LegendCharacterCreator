@@ -1,5 +1,8 @@
 package com.sudomakegame.legendcharactercreator;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * User: micole
@@ -7,5 +10,8 @@ package com.sudomakegame.legendcharactercreator;
  * Time: 8:17 PM
  * To change this template use File | Settings | File Templates.
  */
-public interface Race {
+public class Race {
+    Map<enums.Ability,Integer> bonusStats;
+    List<String> bonusSkills;
+    List<enums.Vision> possibleVisions;
 }

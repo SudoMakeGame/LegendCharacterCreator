@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Currently these values are not fully fleshed out
+    I worked it this way to just have the ability to test -->
+
+        <races>
+    <Race>
+        <Name>Human</Name>
+
+    </Race>
+
+        </races>
